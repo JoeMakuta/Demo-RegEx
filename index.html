@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+
+   <title>Demo RegEx</title>
+</head>
+
+<body>
+
+   <div class="container">
+
+      <p>Email</p>
+
+      <form action="" id="form1">
+         <input type="text" id="emailInput" placeholder="Enter your email address ..." pattern="^([a-zA-Z0-9\.-]{4,30})@([a-zA-Z0-9]{3,10})\.([a-zA-Z]{2,5})$" required>
+         <span id="validMessage"></span>
+         <button type="submit" id="submitButton" onsubmit="submit()">SUBMIT</button>
+      </form>
+
+   </div>
+
+   <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- pattern="^([a-zA-Z0-9-\.]{3,20})@([a-zA-Z]{3,5})\.([a-zA-Z]{3,10})$" required title="Enter a valid email" -->
